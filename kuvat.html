@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="tyylisivu.css">  
+  <title>Mustonen Kyberark</title>
+<style>
+body{background-color: rgb(155, 215, 215);}
+div.header{background-color: rgb(214, 164, 241);padding-bottom: 3%;padding-top: 5%;text-align: center;}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Tervetuloa kuvagalleriaan</h1>
+        <h2>Kuvia yrityksen tähtihetkistä</h2>
+
+    </div> 
+  
+  <div class="nav">
+  <ul>
+    <li><a class="active" href="index.html">Etusivu</a></li>
+    <li><a href="kolmassivu.html">Työhistoria</a></li>
+    
+  </ul>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Omakuva.jpg">
+      <img src="Omakuva.jpg" alt="Omakuva" width="300" height="100">
+    </a>
+    <div class="desc">Omakuva, jotta osaat moikata kadulla.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Kaivaus.jpg">
+      <img src="Kaivaus.jpg" alt="Kaivaus" width="600" height="400">
+    </a>
+    <div class="desc">Urani kuuluisimmat kaivaukset</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="tutkimusassistentti.jpg">
+      <img src="tutkimusassistentti.jpg" alt="tutkimusassistentti" width="600" height="400">
+    </a>
+    <div class="desc">Kaivausassistentti</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>All rights reserved</p>
+</div>
+
+</body>
+</html>
